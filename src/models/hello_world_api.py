@@ -10,4 +10,4 @@ def say_hello():
     return "hello {0}".format(name)
 
 if __name__ == '__main__':
-    app.run(port=10001, debug=False)
+    app.run(port=10001, debug=True)

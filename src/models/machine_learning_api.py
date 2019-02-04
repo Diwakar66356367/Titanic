@@ -14,7 +14,7 @@ model_filepath = os.path.join(model_path, 'lr_model.pkl')
 scaler_filepath = os.path.join(model_path, 'lr_scaler.pkl')
 
 scaler = pickle.load(open(scaler_filepath,'rb'))
-model = pickle.load(open(model_filepath,'rb'))
+model = pickle.load(open(model_filepath, 'rb'))
 
 # columns
 columns = [ u'Age', u'Fare', u'FamilySize', \
@@ -50,4 +50,4 @@ def make_prediction():
 
 if __name__ == '__main__':
     # host flask app at port 10001
-    app.run(port=10001, debug=False)
+    app.run(port=10001)
